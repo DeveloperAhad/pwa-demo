@@ -276,3 +276,10 @@
     transform: rotate(0deg);
   }
 }
+
+
+.menu {
+  padding-top: 20px;
+  display: flex;
+  gap: 10px;
+}

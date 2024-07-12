@@ -9,7 +9,9 @@ export default function App({Component, pageProps}) {
     useEffect(() => {
         const handleBeforeInstallPrompt = (e) => {
             e.preventDefault();
-            setDeferredPrompt(e);
+            if(setDeferredPrompt) {
+                setDeferredPrompt(e);
+            }
         }
 
         window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
